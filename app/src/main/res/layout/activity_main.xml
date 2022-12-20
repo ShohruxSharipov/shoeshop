@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#DDDADA">
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:background="@drawable/img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -137,49 +137,37 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="100dp"
-        android:background="#59FFFFFF"
+        android:background="@drawable/layoutback"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
 
             <Button
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:backgroundTint="#4CAF50"
                 android:text="Featured"
-                android:textSize="7dp" />
+                android:textSize="7dp"
+                android:layout_marginLeft="20dp"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
                 android:text="NIKE Sports Sneakers for Men"
-                android:textSize="15dp" />
+                android:textSize="16dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="$1000    $90" />
-        </LinearLayout>
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="($1000)?   $90" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:background="@drawable/img_1" />
-        </LinearLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <TextView
@@ -201,49 +189,37 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="100dp"
-        android:background="#59FFFFFF"
+        android:background="@drawable/layoutback"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+
 
             <Button
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:backgroundTint="#2196F3"
                 android:text="New"
-                android:textSize="7dp" />
+                android:textSize="10dp"
+                android:layout_marginLeft="20dp"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
                 android:text="NIKE Sports Sneakers for Men"
-                android:textSize="15dp" />
+                android:textSize="16dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="$1000    $90" />
-        </LinearLayout>
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="($1000)?   $90" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:background="@drawable/img_1" />
-        </LinearLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <LinearLayout
@@ -256,27 +232,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_home_24"
-            android:layout_weight="1"/>
+            android:layout_marginHorizontal="20dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_favorite_border_24"
-            android:layout_weight="1"/>
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/ic_baseline_favorite_border_24" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_menu_24"
-            android:layout_weight="1"/>
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/ic_baseline_menu_24" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_newspaper_24"
-            android:layout_weight="1"/>
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/ic_baseline_newspaper_24" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_baseline_person_24"
-            android:layout_weight="1"/>
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/ic_baseline_person_24" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
